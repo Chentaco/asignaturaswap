@@ -1,0 +1,17 @@
+<pregunta>
+  <enunciado>1. A la hora de montar un servidor, ¿qué es lo más importante que deberíamos hacer? </enunciado>
+  <opcionA>Hacerlo lo más rápido posible</opcionA>
+  <opcionB>Pensar y programar la seguridad</opcionB>
+  <opcionC>Planificarlo todo con detalle a lo que pueda pasar en el futuro</opcionC>
+  <opcionD>Pensar en lo que quiero que me paguen</opcionD>
+  <solucion>C</solucion>
+</pregunta>
+
+<pregunta>
+  <enunciado>2. La estructura general para montar una granja web que escale correctamente: </enunciado>
+  <opcionA>Web y correo</opcionA>
+  <opcionB>Web, bases de datos y correo</opcionB>
+  <opcionC>Web, bases de datos, correo, antivirus y firewall</opcionC>
+  <opcionD>Web, bases de datos, correo, antivirus, firewall, sistemas SAI y generador hidráulico.</opcionD>
+  <solucion>B</solucion>
+</pregunta>

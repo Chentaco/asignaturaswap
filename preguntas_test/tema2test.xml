@@ -1,0 +1,17 @@
+<pregunta>
+  <enunciado>1. ¿Qué significa disponibilidad? </enunciado>
+  <opcionA>Que el servidor acepte visitas 24/7</opcionA>
+  <opcionB>Poder acceder al servidor desde cualquier parte</opcionB>
+  <opcionC>Es la capacidad de un sistema de manejar la carga y el esfuerzo para adaptarse de nuevo </opcionC>
+  <opcionD>Todas son correctas</opcionD>
+  <solucion>A</solucion>
+</pregunta>
+
+<pregunta>
+  <enunciado>2. ¿Qué tipos de escalado existen? </enunciado>
+  <opcionA>Norte y Sur, dependiendo de su localización</opcionA>
+  <opcionB>Lento y Rápido, según lo que le cueste escalar</opcionB>
+  <opcionC>Este y Oeste, dependiendo de su localización</opcionC>
+  <opcionD>Vertical y Horizontal, dependiendo de lo que se incremente</opcionD>
+  <solucion>D</solucion>
+</pregunta>
