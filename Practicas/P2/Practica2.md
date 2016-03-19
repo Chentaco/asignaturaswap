@@ -28,9 +28,9 @@ Recordemos que teníamos dos máquinas (M1SWAP y M2SWAP), donde M1SWAP será la máq
   
 Podemos observar en la siguientes capturas como partiendo de la máquina servidora hemos enviado el tar correctamente a la máquina cliente:  
 
-![img](capturas/capturaswap_p2_1.png)  
+![img](capturas/capturaswap_p2_1.PNG)  
 
-![img](capturas/capturaswap_p2_1.png) 
+![img](capturas/capturaswap_p2_1.PNG) 
 
 #Instalar y utilizar rsync  
 
@@ -46,11 +46,11 @@ sudo rsync -avz --delete -e ssh root@192.168.18.128:/var/www/ /var/www/
 ```
   
 Si todo ha ido correcto, después de que nos pida la contraseña del root de la primera máquina, debería de haberse copiado.  
-![img](capturas/capturaswap_p2_3.png) 
+![img](capturas/capturaswap_p2_3.PNG) 
 
-![img](capturas/capturaswap_p2_5.png) 
+![img](capturas/capturaswap_p2_5.PNG) 
 
-![img](capturas/capturaswap_p2_6.png) 
+![img](capturas/capturaswap_p2_6.PNG) 
 
 Cada vez que usemos el comando nos pedirá contraseña, por lo que será algo incómodo, (y si programamos un cron, no nos dejará usarlo), por lo que se 
 propone configurar el ssh para que no lo haga. 
@@ -58,7 +58,7 @@ propone configurar el ssh para que no lo haga.
 **NOTA IMPORTANTE**: Las carpetas de /var/www/ de ambos equipos tienen permisos de escritura de root. Vamos a darle permisos para que los usuarios puedan
 trabajar en esta carpeta, para ello hago lo siguiente en ambas máquinas:  
 
-![img](capturas/capturaswap_p2_13.png) 
+![img](capturas/capturaswap_p2_13.PNG) 
 
 Donde *ramon* es el nombre de usuario.
 
@@ -67,15 +67,15 @@ Donde *ramon* es el nombre de usuario.
 Lo primero es utilizar el *ssh-keygen* en la máquina cliente, dependiendo de quien haga el rsync (root o usuario), lo configuraremos para que este pueda
 acceder sin contraseña:  
 
-![img](capturas/capturaswap_p2_7.png) 
+![img](capturas/capturaswap_p2_7.PNG) 
 
-![img](capturas/capturaswap_p2_14.png) 
+![img](capturas/capturaswap_p2_14.PNG) 
 
 Una vez hecho esto, enviamos la configuración a la máquina sevidor:   
-![img](capturas/capturaswap_p2_8.png) 
+![img](capturas/capturaswap_p2_8.PNG) 
 Por último, probamos a loguear a la máquina host desde la cliente, incluso usar otros comandos:  
-![img](capturas/capturaswap_p2_9.png)  
-![img](capturas/capturaswap_p2_10.png)  
+![img](capturas/capturaswap_p2_9.PNG)  
+![img](capturas/capturaswap_p2_10.PNG)  
 
 #Programar tareas con crontab
 
@@ -85,10 +85,10 @@ Lo primero será editar el archivo crontab:
 sudo nano /etc/crontab  
 ```
 Añadimos una linea con el tiempo que quiero que haga esa acción. Como dice cada hora, edito el primer campo "minutos" para que lo haga cada "00" minutos:  
-![img](capturas/capturaswap_p2_11.png)  
+![img](capturas/capturaswap_p2_11.PNG)  
 
 Si todo ha ido bien, y el ssh sin contraseña está bien configurado, debería funcionar correctamente. Para probarlo, nosotros hemos editado el crontab para
 que lo haga cada minuto. He creado "HOLAESTOFUNCIONA.txt" para ver si después de 1 minuto se copia:  
-![img](capturas/capturaswap_p2_15.png)  
+![img](capturas/capturaswap_p2_15.PNG)  
 
 Como observamos en la captura, al minuto el archivo se ha copiado correctamente.
