@@ -1,0 +1,17 @@
+<pregunta>
+  <enunciado>1. ¿Qué es el backbone? </enunciado>
+  <opcionA>El hueso de atrás de las máquinas</opcionA>
+  <opcionB>El eje principal de enlace entre máquinas</opcionB>
+  <opcionC>La zona DMZ entre máquinas</opcionC>
+  <opcionD>El eje secundario de enlace entre máquinas</opcionD>
+  <solucion>B</solucion>
+</pregunta>
+
+<pregunta>
+  <enunciado>2. ¿Qué DMZ configurarias en caso de que quisieras obtener la mejor configuración? </enunciado>
+  <opcionA>Sin DMZ</opcionA>
+  <opcionB>DMZ simple</opcionB>
+  <opcionC>DMZ tradicional</opcionC>
+  <opcionD>DMZ doble</opcionD>
+  <solucion>D</solucion>
+</pregunta>
