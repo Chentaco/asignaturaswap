@@ -30,7 +30,7 @@ Podemos observar en la siguientes capturas como partiendo de la máquina servidor
 
 ![img](capturas/capturaswap_p2_1.PNG)  
 
-![img](capturas/capturaswap_p2_1.PNG) 
+![img](capturas/capturaswap_p2_2.PNG) 
 
 #Instalar y utilizar rsync  
 
