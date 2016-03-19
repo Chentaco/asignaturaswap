@@ -2,7 +2,7 @@
 #Autor: Ramón Sánchez García
 
 Para desarrollar esta práctica partimos de las máquinas virtuales y todo lo instalado en la práctica 1. La práctica está realizada por mi y 
-documentada en este enlace.
+documentada en [este enlace](https://github.com/Chentaco/asignaturaswap/blob/master/Practicas/P1/Practica1.md).
 
 El desarrollo de esta segunda práctica se divide en los siguientes objetivos:  
 
@@ -72,7 +72,7 @@ acceder sin contraseña:
 ![img](capturas/capturaswap_p2_14.PNG) 
 
 Una vez hecho esto, enviamos la configuración a la máquina sevidor:   
-![img](capturas/capturaswap_p2_8.PNG) 
+![img](capturas/capturaswap_p2_8.PNG)  
 Por último, probamos a loguear a la máquina host desde la cliente, incluso usar otros comandos:  
 ![img](capturas/capturaswap_p2_9.PNG)  
 ![img](capturas/capturaswap_p2_10.PNG)  
