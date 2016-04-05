@@ -23,20 +23,20 @@ que es el que utilizaremos para usar los balanceadores de carga.
   
 Una vez que ha terminado la instalación, vemos que dirección ip es la que tiene:    
   
-![img](capturas/capturaswap_p3_1.PNG)   
+![img](capturas/capturasswap_p3_1.PNG)   
   
 Y si es accesible entre las máquinas que ya teniamos y esta con un ping:  
-![img](capturas/capturaswap_p2_2.PNG)  
+![img](capturas/capturasswap_p2_2.PNG)  
   
 Si todo ha ido correcto, procedemos a la instalación y configuración de los balanceadores de carga que vamos a probar.  
 
 #Nginx: Instalación y configuración
 
 Lo primero que hay que realizar es la importación de la clave del repositorio de software para poder instalar nginx, para ello:  
-![img](capturas/capturaswap_p3_4.PNG)  
+![img](capturas/capturasswap_p3_4.PNG)  
   
-Hecho esto, pasamos a añadir el respositorio al fichero con los siguientes echos:
-![img](capturas/capturaswap_p3_5.PNG)  
+Hecho esto, pasamos a añadir el respositorio al fichero con los siguientes echos:  
+![img](capturas/capturasswap_p3_5.PNG)  
 Como podemos ver, necesito permisos de administrador para poder realizarlo, además que termina con un *apt-get upgrade*.  
 Por último solo queda ejecutar:  
 ``` 
@@ -76,28 +76,28 @@ service nginx restart
 y/o indiquen en qué máquina estamos.  
 **NOTA IMPORTANTE 2:** Como estamos usando las máquinas de la práctica 2, es recomendable evitar que se haga el rsync que teniamos programado en el crontab. Para ello comentamos 
 la linea:  
-![img](capturas/capturaswap_p3_8.PNG)  
+![img](capturas/capturasswap_p3_8.PNG)  
   
 Realizamos un curl 192.168.18.130, es decir, a la máquina que está haciendo de balanceador de carga, y si todo va bien, veremos como cada vez que lo hagamos cambia de máquina:  
-![img](capturas/capturaswap_p3_9.PNG)  
+![img](capturas/capturasswap_p3_9.PNG)  
 Podemos probar también desde la máquina real a acceder desde el navegador, y que al actualizar la página, esta cambie de servidor:  
-![img](capturas/capturaswap_p3_10.PNG)  
-![img](capturas/capturaswap_p3_11.PNG)  
+![img](capturas/capturasswap_p3_10.PNG)  
+![img](capturas/capturasswap_p3_11.PNG)  
   
 La práctica también dice que supongamos que la primera máquina, la M1SWAP, tiene el doble de potencia que la segunda, por lo que tendrá más "peso" con el que cargar. Para 
 ello añadimos en el archivo de configuración lo siguiente:  
-![img](capturas/capturaswap_p3_12.PNG)  
+![img](capturas/capturasswap_p3_12.PNG)  
   
 Ahora, cuando hagamos peticiones, se harán el doble de peticiones a la máquina 1 que a la máquina 2:  
-![img](capturas/capturaswap_p3_13.PNG)  
+![img](capturas/capturasswap_p3_13.PNG)  
   
 Se pueden realizar muchas más configuraciones, pero las básicas y que nos pide la práctica son las ya indicadas.  
 Acabado esto, toca parar el servicio (pues usa el mismo puerto que hproxy) y empezar a trabajar con el siguiente balanceador de carga. 
 Para ello, hay dos formas de detener el proceso:
 * Con el comando *kill* y la ID del proceso  
-![img](capturas/capturaswap_p3_14.PNG)  
+![img](capturas/capturasswap_p3_14.PNG)  
 * Con los comandos que ya trae nginx  
-![img](capturas/capturaswap_p3_15.PNG)  
+![img](capturas/capturasswap_p3_15.PNG)  
   
 #Haproxy: Instalación y configuración
 
@@ -127,13 +127,13 @@ backend servers
   server m2 192.168.18.129:80 maxconn 32  
 ```
 Como podemos ver, idicamos nuevamente la ip de nuestras máquinas servidoras. Si queremos editar el peso, solo hay que añadir:  
-![img](capturas/capturaswap_p3_18.PNG)  
+![img](capturas/capturasswap_p3_18.PNG)  
   
 Realizamos las pruebas del mismo modo que con nginx:  
-![img](capturas/capturaswap_p3_17.PNG)  
+![img](capturas/capturasswap_p3_17.PNG)  
 
 Y cuando hayamos terminado, paramos el proceso. En esta ocasión, solo funciona con kill:  
-![img](capturas/capturaswap_p3_20.PNG)  
+![img](capturas/capturasswap_p3_20.PNG)  
 
 #Opcional: Instalación y configuración de Pound
 
@@ -144,10 +144,10 @@ apt-get install pound
   
 Tras la instalación nos indicará que el archivo no está configurado y que está "apagado" por defecto. En primer lugar editamos el archivo */etc/pound/pound.cfg* y 
 añadimos la configuración de nuestras máquinas. En mi caso solo he añadido lo siguiente:  
-![img](capturas/capturaswap_p3_22.PNG)  
+![img](capturas/capturasswap_p3_22.PNG)  
   
 Tras esto, editamos el fichero */etc/default/pound*, en concreto startup=0 y lo ponemos a 1:  
-![img](capturas/capturaswap_p3_21.PNG)  
+![img](capturas/capturasswap_p3_21.PNG)  
 
 Ejecutamos el servidor (o reiniciamos en caso de que ya estuviese encendido):  
 ```
@@ -155,4 +155,4 @@ Ejecutamos el servidor (o reiniciamos en caso de que ya estuviese encendido):
 ```
 
 Solo queda ver si funciona, de nuevo con un curl:  
-![img](capturas/capturaswap_p3_23.PNG)  
+![img](capturas/capturasswap_p3_23.PNG)  
