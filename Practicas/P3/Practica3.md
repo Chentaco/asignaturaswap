@@ -26,7 +26,7 @@ Una vez que ha terminado la instalación, vemos que dirección ip es la que tiene:
 ![img](capturas/capturasswap_p3_1.PNG)   
   
 Y si es accesible entre las máquinas que ya teniamos y esta con un ping:  
-![img](capturas/capturasswap_p2_2.PNG)  
+![img](capturas/capturasswap_p3_2.PNG)  
   
 Si todo ha ido correcto, procedemos a la instalación y configuración de los balanceadores de carga que vamos a probar.  
 
