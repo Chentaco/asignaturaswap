@@ -1,0 +1,17 @@
+<pregunta>
+  <enunciado>1. ¿Cuál de los siguientes software no es o no puede ser utilizado como balanceador de carga? </enunciado>
+  <opcionA>Apache</opcionA>
+  <opcionB>Zen Load Balancer</opcionB>
+  <opcionC>Nginx</opcionC>
+  <opcionD>Todas son correctas</opcionD>
+  <solucion>D</solucion>
+</pregunta>
+
+<pregunta>
+  <enunciado>2. ¿En qué consiste el algoritmo de carga de Round-Robin? </enunciado>
+  <opcionA>Es aquel basado en prioridad.</opcionA>
+  <opcionB>Es aquel basado en turnos.</opcionB>
+  <opcionC>Es aquel basado en ponderación.</opcionC>
+  <opcionD>Es aquel que ayuda a Batman. </opcionD>
+  <solucion>B</solucion>
+</pregunta>
