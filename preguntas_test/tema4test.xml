@@ -3,7 +3,7 @@
   <opcionA>Apache</opcionA>
   <opcionB>Zen Load Balancer</opcionB>
   <opcionC>Nginx</opcionC>
-  <opcionD>Todas son correctas</opcionD>
+  <opcionD>Todas pueden ser balanceadores</opcionD>
   <solucion>D</solucion>
 </pregunta>
 
