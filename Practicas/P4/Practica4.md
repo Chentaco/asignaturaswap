@@ -45,7 +45,7 @@ Entre todos estos datos, para la comparativa nos vamos a quedar con **"Time take
   
 Para cada tipo de escenario (servidor directa, con nginx y hapache) he realizado 10 pruebas distintas (solo en el caso de Apache Benchmark como veremos) 
 que recojo en la siguiente tablas:  
-![img](capturas/tablaspache.png)  
+![img](capturas/tablasapache.png)  
 
 Ahora, para una mejor comparativa, recojo una comparativa con la media de cada escenario con Apache Benchmark, en la siguiente gráfica:  
 ![img](capturas/graficasapache.png)  
@@ -81,13 +81,13 @@ Nos quedamos con **"Availability"**, **"Elapsed time"**, **"Response time"** y *
 Realizamos las baterías de pruebas a los mismos escenarios que con la herramienta del apartado anterior.  
 **NOTA 3**: Al parecer, la carpeta de siege-windows debe estar en C:\ directamente. Si intentamos ejecutarlo desde otro directorio, nos saldrá el siguiente 
 mensaje:  
-![img](capturas/capturasswap_p4_06.PNG) 
+![img](capturas/capturasswap_p4_06.PNG)  
 **NOTA 4**: Por temas de tiempo (cada prueba dura un minuto) y que a veces salian errores, he optado por realizar 5 pruebas de cada escenario en lugar de 
 10 como hice con Apache Benchmark.  
   
 Recojo los datos de nuevo en las siguientes tablas y realizo la comparativa en los gráficos siguientes:  
 ![img](capturas/tablassiege.png)    
-![img](capturas/tablasiege.png)  
+![img](capturas/graficasiege.png)  
 Al igual que en el apartado anterior, solo he hecho gráfica para aquellos datos que considero que se tienen que comparar y no son demasiado iguales.  
 De nuevo, el número de transiciones por segundo es mejor si está conectado directamente que usando los balanceadores. En este caso, nginx es un poquito mejor 
 que haproxy.  
@@ -99,7 +99,7 @@ Yo he utilizado el comando con los parámetros por defecto, donde utiliza 5 clien
 openload http://ipmaquina
 ```  
 Tras realizar una ejecución, obtenemos los siguientes datos:  
-De aquí me he quedado con **"Total TPS"**, **"Avg. Response time"** y **"Max Response Time"***.  
+De aquí me he quedado con **"Total TPS"**, **"Avg. Response time"** y **"Max Response Time"**.  
 **NOTA 5**: Las peticiones de OpenWedLoad NO paran. Para hacerlo hay que presionar ENTER. Yo lo he hecho cada **5 peticiones**.  
 Una vez más, los resultados y la comparativa con gráficas está recogida en el siguiente apartado:  
 ![img](capturas/tablasopl.png)   
