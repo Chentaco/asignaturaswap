@@ -1,0 +1,17 @@
+<pregunta>
+  <enunciado>1. ¿Cuál de los siguientes software no es o no puede ser utilizado como herramienta para comprobar el rendimiento de un servidor web? </enunciado>
+  <opcionA>Apache Benchmark</opcionA>
+  <opcionB>httperf</opcionB>
+  <opcionC>OpenWebLoad</opcionC>
+  <opcionD>nginx</opcionD>
+  <solucion>D</solucion>
+</pregunta>
+
+<pregunta>
+  <enunciado>2. Uno de los siguientes no es un tipo de pruebas para comprobar el rendimiento del servidor. ¿Cuál? </enunciado>
+  <opcionA>Overload(Sobrecarga)</opcionA>
+  <opcionB>Smoke(Humo)</opcionB>
+  <opcionC>Sub-Zero(Congelación)</opcionC>
+  <opcionD>Stability(Estabilidad) </opcionD>
+  <solucion>C</solucion>
+</pregunta>
