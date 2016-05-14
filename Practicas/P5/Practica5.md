@@ -81,7 +81,7 @@ Hecho los cambios, reiniciamos el servicio con:
 Si todo ha ido bien, no debería haber salido ningún error al reiniciar. Pasamos ahora a ejecutar las siguientes sentencias:  
 ![img](capturas/capturasswap_P5_16.PNG)  
 ![img](capturas/capturasswap_P5_17.PNG)  
-Muy importante fijarse en los datos de esta última tabla. Los vamos a necesitar para la siguiente configuración que realizamos ahora **DESDE LA M2**:
+Muy importante fijarse en los datos de esta última tabla. Los vamos a necesitar para la siguiente configuración que realizamos ahora **DESDE LA M2**:  
 ![img](capturas/capturasswap_P5_18.PNG)  
 Los parámetros de masterlogfile y masterlogpost serán diferentes en cada caso, hay que mirar en la M1 en SHOW MASTER STATUS. Además hay que poner la ip en masterhost de nuestra M1.  
   
