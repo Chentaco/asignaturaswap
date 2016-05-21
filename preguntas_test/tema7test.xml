@@ -1,17 +1,17 @@
 <pregunta>
-  <enunciado>1. ¿Qué es un cortafuegos? </enunciado>
-  <opcionA>Franja de terreno sin vegetación que se deja para impedir que se propague el fuego</opcionA>
-  <opcionB>Un sistema de cuchillas que sirve para cortas llamaradas</opcionB>
-  <opcionC>Parte de un sistema informático o red diseñado para evitar accesos indebidos al sistema</opcionC>
-  <opcionD>A y C son correctas, aunque en esta asignatura nos centremos más en C</opcionD>
+  <enunciado>1. ¿Cual de las siguientes opciones NO puede hacer un RAID? </enunciado>
+  <opcionA>Mejorar el rendimiento de las aplicaciones</opcionA>
+  <opcionB>Simplificar la recuperación de un desastre</opcionB>
+  <opcionC>Proteger los datos</opcionC>
+  <opcionD>Todas las opciones NO las puedes hacer un RAID</opcionD>
   <solucion>D</solucion>
 </pregunta>
 
 <pregunta>
-  <enunciado>2. Una de los siguientes no es una acción para asegurar el servidor. ¿Cuál? </enunciado>
-  <opcionA>No abrir ningún puerto nunca</opcionA>
-  <opcionB>Eliminar cuentas y grupos no necesarios</opcionB>
-  <opcionC>Renombrar las cuentas de administrador e invitado</opcionC>
-  <opcionD>Eliminar servicios no necesarios</opcionD>
-  <solucion>C</solucion>
+  <enunciado>2. ¿Qué tamaño de unidad RAID se obtendrá al configurar un RAID 1 a partir de 5 discos de 125 GB cada uno? </enunciado>
+  <opcionA>725 GB</opcionA>
+  <opcionB>125 GB</opcionB>
+  <opcionC>Pregunta trampa, solo se pueden usar 2 discos, serian 300 GB</opcionC>
+  <opcionD>Todas son incorrectas</opcionD>
+  <solucion>B</solucion>
 </pregunta>
