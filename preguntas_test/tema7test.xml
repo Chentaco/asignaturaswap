@@ -1,0 +1,17 @@
+<pregunta>
+  <enunciado>1. ¿Qué es un cortafuegos? </enunciado>
+  <opcionA>Franja de terreno sin vegetación que se deja para impedir que se propague el fuego</opcionA>
+  <opcionB>Un sistema de cuchillas que sirve para cortas llamaradas</opcionB>
+  <opcionC>Parte de un sistema informático o red diseñado para evitar accesos indebidos al sistema</opcionC>
+  <opcionD>A y C son correctas, aunque en esta asignatura nos centremos más en C</opcionD>
+  <solucion>D</solucion>
+</pregunta>
+
+<pregunta>
+  <enunciado>2. Una de los siguientes no es una acción para asegurar el servidor. ¿Cuál? </enunciado>
+  <opcionA>No abrir ningún puerto nunca</opcionA>
+  <opcionB>Eliminar cuentas y grupos no necesarios</opcionB>
+  <opcionC>Renombrar las cuentas de administrador e invitado</opcionC>
+  <opcionD>Eliminar servicios no necesarios</opcionD>
+  <solucion>C</solucion>
+</pregunta>
