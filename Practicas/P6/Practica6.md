@@ -119,4 +119,6 @@ sudo apt-get install nfs-common
 ```  
 
 Ahora necesitamos crear el directorio (recordemos que nosotros creamos **/dat/**) y montar en él usando la IP de la M1, la máquina servidora:  
-![img](capturas/capturasswap_P6_16.PNG)
+![img](capturas/capturasswap_P6_16.PNG)  
+  
+**Fuente:** https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-14-04
